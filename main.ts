@@ -11,10 +11,10 @@ basic.forever(function () {
     if (input.lightLevel() <= 25) {
         strip.showColor(neopixel.colors(NeoPixelColors.White))
     }
-    if (input.lightLevel() > 60) {
+    if (input.lightLevel() > 80) {
         strip.showColor(neopixel.colors(NeoPixelColors.Black))
     }
-    if (input.lightLevel() > 25 && input.lightLevel() < 60) {
+    if (input.lightLevel() > 25 && input.lightLevel() < 80) {
         strip.showColor(neopixel.colors(NeoPixelColors.Red))
     }
 })
